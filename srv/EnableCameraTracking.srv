@@ -1,0 +1,7 @@
+# Get the costmap
+
+# Specifications for the requested costmap
+string camera_name
+---
+bool success
+string error_msg
