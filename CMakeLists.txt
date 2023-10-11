@@ -19,7 +19,7 @@ add_compile_options(-Wno-error=deprecated)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/BoundingBox.msg"
   "srv/EnableCameraTracking.srv"
-  # "action/FollowGPSWaypoints.action"
+  "action/VisualServoing.action"
   DEPENDENCIES builtin_interfaces geometry_msgs std_msgs action_msgs nav_msgs geographic_msgs
 )
 

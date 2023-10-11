@@ -1,0 +1,17 @@
+#goal definition
+geometry_msgs/Point target
+float32 speed
+string camera_topic
+builtin_interfaces/Duration time_allowance
+---
+uint16 NONE=0
+uint16 UNKNOWN=720
+uint16 TIMEOUT=721
+uint16 TF_ERROR=722
+uint16 COLLISION_AHEAD=723
+uint16 INVALID_INPUT=724
+
+builtin_interfaces/Duration total_elapsed_time
+uint16 error_code
+---
+float32 distance_traveled
