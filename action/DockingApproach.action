@@ -1,7 +1,5 @@
 #goal definition
-float32 speed
 string target_pose_topic
-float32 lidar_angle_offset
 builtin_interfaces/Duration time_allowance
 ---
 uint16 NONE=0
