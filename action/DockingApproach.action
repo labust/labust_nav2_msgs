@@ -1,5 +1,8 @@
 #goal definition
-string target_pose_topic
+string target_pc_info_topic
+float32 phase_one_tollerance_pos
+float32 phase_one_tollerance_yaw
+float32 offset_distance
 builtin_interfaces/Duration time_allowance
 ---
 uint16 NONE=0
