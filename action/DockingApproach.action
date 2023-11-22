@@ -3,7 +3,9 @@ string target_pc_info_topic
 float32 phase_one_tollerance_pos
 float32 phase_one_tollerance_yaw
 float32 offset_distance
-int8 start_phase
+uint8 start_phase
+bool sim_mode
+
 builtin_interfaces/Duration time_allowance
 ---
 uint16 NONE=0
