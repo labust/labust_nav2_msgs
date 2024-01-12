@@ -8,3 +8,4 @@ int32 image_height
 
 float64 horizontal_position
 float64 target_angle
+float64 confidence
