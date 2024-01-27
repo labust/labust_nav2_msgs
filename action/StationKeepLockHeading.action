@@ -1,6 +1,8 @@
 #goal definition
 
 builtin_interfaces/Duration time_allowance
+float32 relative_offset_x
+float32 relative_offset_y
 ---
 uint16 NONE=0
 uint16 UNKNOWN=720
