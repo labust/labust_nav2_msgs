@@ -17,7 +17,12 @@ nav2_package()
 add_compile_options(-Wno-error=deprecated)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+<<<<<<< Updated upstream
   "msg/TargetDetectionInfo.msg"
+=======
+  "msg/BoundingBox.msg"
+  "msg/BoundingBoxArray.msg"
+>>>>>>> Stashed changes
   "msg/EstimatedTargetPosition.msg"
   "srv/EnableCameraTracking.srv"
   "action/VisualServoing.action"
