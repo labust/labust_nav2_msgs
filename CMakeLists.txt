@@ -18,7 +18,6 @@ add_compile_options(-Wno-error=deprecated)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/TargetDetectionInfo.msg"
-  "msg/BoundingBox.msg"
   "msg/BoundingBoxArray.msg"
   "msg/EstimatedTargetPosition.msg"
   "srv/EnableCameraTracking.srv"
