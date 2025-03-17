@@ -13,7 +13,7 @@
   <test_depend>ament_lint_common</test_depend>
 
 
-  <build_depend>nav2_common</build_depend>
+
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
   <depend>builtin_interfaces</depend>
@@ -22,6 +22,8 @@
   <depend>action_msgs</depend>
   <depend>nav_msgs</depend>
   <depend>geographic_msgs</depend>
+
+  <build_depend>nav2_common</build_depend>
 
   <member_of_group>rosidl_interface_packages</member_of_group>
 
