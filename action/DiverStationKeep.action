@@ -1,0 +1,19 @@
+#goal definition
+
+builtin_interfaces/Duration time_allowance
+bool use_initial_target_pose
+geometry_msgs/Pose initial_target_pose
+float32 offset_x
+float32 offset_y
+float32 offset_z
+---
+uint16 NONE=0
+uint16 UNKNOWN=720
+uint16 TIMEOUT=721
+uint16 TF_ERROR=722
+uint16 INVALID_INPUT=724
+
+builtin_interfaces/Duration total_elapsed_time
+uint16 error_code
+---
+float32 distance_traveled

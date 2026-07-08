@@ -1,0 +1,11 @@
+#goal definition
+
+string reason
+---
+uint16 NONE=0
+uint16 UNKNOWN=720
+
+builtin_interfaces/Duration total_elapsed_time
+uint16 error_code
+---
+float32 distance_traveled

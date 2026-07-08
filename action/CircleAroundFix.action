@@ -1,0 +1,21 @@
+#goal definition
+
+geometry_msgs/Pose center_pose
+float32 radius
+float32 angular_rate
+bool clockwise
+uint8 heading_mode
+uint8 FACE_CENTER=0
+uint8 FOLLOW_PATH=1
+float32 num_revolutions
+float32 offset_z
+builtin_interfaces/Duration time_allowance
+---
+uint16 NONE=0
+uint16 UNKNOWN=720
+uint16 TIMEOUT=721
+
+builtin_interfaces/Duration total_elapsed_time
+uint16 error_code
+---
+float32 distance_traveled
