@@ -6,6 +6,7 @@ geometry_msgs/Pose initial_target_pose
 float32 offset_x
 float32 offset_y
 float32 offset_z
+bool track_fix_updates
 ---
 uint16 NONE=0
 uint16 UNKNOWN=720
