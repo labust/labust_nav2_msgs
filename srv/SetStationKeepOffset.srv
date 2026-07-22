@@ -1,0 +1,7 @@
+float64 offset_x
+float64 offset_y
+float64 offset_z
+float64 offset_yaw
+---
+bool success
+string message

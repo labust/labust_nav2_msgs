@@ -22,6 +22,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/EnableCameraTracking.srv"
   "srv/AdvanceMissionPhase.srv"
   "srv/SetStationKeepTarget.srv"
+  "srv/SetStationKeepOffset.srv"
   "action/VisualServoing.action"
   "action/LidarServoing.action"
   "action/DockingApproach.action"
