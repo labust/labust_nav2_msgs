@@ -1,6 +1,7 @@
 #goal definition
 
 geometry_msgs/Pose center_pose
+bool use_current_pose_as_center
 float32 radius
 float32 angular_rate
 bool clockwise
