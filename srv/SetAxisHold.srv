@@ -1,0 +1,20 @@
+uint8 KEEP=0
+uint8 ON=1
+uint8 OFF=2
+uint8 TOGGLE=3
+
+uint8 position
+uint8 depth
+uint8 altitude
+uint8 yaw
+uint8 pitch
+uint8 roll
+---
+bool success
+string message
+bool hold_position
+bool hold_depth
+bool hold_altitude
+bool hold_yaw
+bool hold_pitch
+bool hold_roll

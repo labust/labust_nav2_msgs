@@ -1,0 +1,31 @@
+#goal definition
+
+builtin_interfaces/Duration time_allowance
+bool hold_position
+bool hold_depth
+bool hold_altitude
+bool hold_yaw
+bool hold_pitch
+bool hold_roll
+---
+uint16 NONE=0
+uint16 UNKNOWN=730
+uint16 TIMEOUT=731
+uint16 NO_NAVIGATION=732
+
+builtin_interfaces/Duration total_elapsed_time
+uint16 error_code
+---
+bool hold_position
+bool hold_depth
+bool hold_altitude
+bool hold_yaw
+bool hold_pitch
+bool hold_roll
+float64 north_sp
+float64 east_sp
+float64 depth_sp
+float64 altitude_sp
+float64 roll_sp
+float64 pitch_sp
+float64 yaw_sp

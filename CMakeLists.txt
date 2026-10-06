@@ -23,6 +23,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/AdvanceMissionPhase.srv"
   "srv/SetStationKeepTarget.srv"
   "srv/SetStationKeepOffset.srv"
+  "srv/SetAxisHold.srv"
   "action/VisualServoing.action"
   "action/LidarServoing.action"
   "action/DockingApproach.action"
@@ -30,6 +31,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "action/DiverStationKeep.action"
   "action/AbortAndSurface.action"
   "action/CircleAroundFix.action"
+  "action/AssistedManual.action"
   DEPENDENCIES builtin_interfaces geometry_msgs std_msgs action_msgs nav_msgs geographic_msgs
 )
 
