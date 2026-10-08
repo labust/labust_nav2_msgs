@@ -1,0 +1,11 @@
+# Relative path of the root XML file within files.
+string entry_path
+
+# Root XML plus every transitive local include needed at runtime.
+BehaviorTreeFile[] files
+---
+bool accepted
+string deployment_id
+# Absolute entry path to use as RunBehaviorTree.behavior_tree.
+string behavior_tree
+string error_message

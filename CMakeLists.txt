@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10)
 project(labust_nav2_msgs)
 
 find_package(ament_cmake REQUIRED)
@@ -17,10 +17,15 @@ nav2_package()
 add_compile_options(-Wno-error=deprecated)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/BehaviorTreeFile.msg"
+  "msg/BehaviorTreeNodeState.msg"
   "msg/TargetDetectionInfo.msg"
+  "msg/BoundingBox.msg"
   "msg/BoundingBoxArray.msg"
   "msg/EstimatedTargetPosition.msg"
+  "srv/DeployBehaviorTree.srv"
   "srv/EnableCameraTracking.srv"
+  "action/RunBehaviorTree.action"
   "action/VisualServoing.action"
   "action/LidarServoing.action"
   "action/DockingApproach.action"

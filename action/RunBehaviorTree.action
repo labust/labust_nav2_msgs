@@ -1,0 +1,17 @@
+# Absolute entry path returned by the deploy service. Nav2 uses this field to load the tree.
+string behavior_tree
+string deployment_id
+string blackboard_json
+bool debug
+---
+uint16 NONE=0
+uint16 UNKNOWN=9000
+uint16 DEPLOYMENT_NOT_FOUND=9001
+uint16 FAILED_TO_LOAD_BEHAVIOR_TREE=9002
+uint16 INVALID_BLACKBOARD_INPUTS=9003
+uint16 GOAL_REJECTED=9004
+
+uint16 error_code
+string error_msg
+---
+BehaviorTreeNodeState[] node_states
