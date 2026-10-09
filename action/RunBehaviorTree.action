@@ -2,7 +2,14 @@
 string behavior_tree
 string deployment_id
 string blackboard_json
+# Detached goals keep executing when the action client disappears. Attached goals
+# require a heartbeat from the client and are canceled after the configured lease.
+bool detached
 bool debug
+uint8 DEBUG_START_PAUSED=0
+uint8 DEBUG_RUN_TO_BREAKPOINT=1
+uint8 debug_start_mode
+string[] breakpoint_paths
 ---
 uint16 NONE=0
 uint16 UNKNOWN=9000
@@ -10,8 +17,18 @@ uint16 DEPLOYMENT_NOT_FOUND=9001
 uint16 FAILED_TO_LOAD_BEHAVIOR_TREE=9002
 uint16 INVALID_BLACKBOARD_INPUTS=9003
 uint16 GOAL_REJECTED=9004
+uint16 DEBUG_CONFIGURATION_INVALID=9005
+uint16 HEARTBEAT_TIMEOUT=9006
 
 uint16 error_code
 string error_msg
 ---
-BehaviorTreeNodeState[] node_states
+uint8 IDLE=0
+uint8 RUNNING=1
+uint8 SUCCESS=2
+uint8 FAILURE=3
+
+builtin_interfaces/Time stamp
+string deployment_id
+uint16[] node_uids
+uint8[] node_states

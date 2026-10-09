@@ -18,12 +18,14 @@ add_compile_options(-Wno-error=deprecated)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/BehaviorTreeFile.msg"
-  "msg/BehaviorTreeNodeState.msg"
+  "msg/BehaviorTreeExecutionState.msg"
+  "msg/BehaviorTreeNodeMap.msg"
   "msg/TargetDetectionInfo.msg"
   "msg/BoundingBox.msg"
   "msg/BoundingBoxArray.msg"
   "msg/EstimatedTargetPosition.msg"
   "srv/DeployBehaviorTree.srv"
+  "srv/ControlBehaviorTreeDebug.srv"
   "srv/EnableCameraTracking.srv"
   "action/RunBehaviorTree.action"
   "action/VisualServoing.action"
