@@ -1,0 +1,35 @@
+# Keeps the vehicle on a circle around a moving target (diver or another
+# vehicle), at a chosen angle relative to the target's heading, facing it.
+
+# 0 = track until cancelled
+builtin_interfaces/Duration time_allowance
+# Horizontal distance kept from the target, metres
+float32 radius
+# Vehicle depth minus target depth, metres (NED: negative = above the target)
+float32 depth_offset
+# Place on the circle relative to the target's heading, radians:
+# 0 = in front of the target, pi/2 = on its right, pi = behind it
+float32 station_angle
+# true: the place on the circle turns with the target's heading.
+# false: keep the world bearing from the target the vehicle starts at.
+bool follow_target_heading
+# Speed at which the place on the circle may move around it, m/s.
+# 0 = the behaviour's default_arc_speed parameter
+float32 max_arc_speed
+# true: point the vehicle at the target. false: match the target's heading.
+bool face_target
+---
+uint16 NONE=0
+uint16 UNKNOWN=720
+uint16 TIMEOUT=721
+uint16 INVALID_INPUT=724
+
+builtin_interfaces/Duration total_elapsed_time
+uint16 error_code
+---
+# Horizontal distance from the vehicle to the target, metres
+float32 distance_to_target
+# Horizontal distance from the vehicle to its place on the circle, metres
+float32 distance_to_station
+# Age of the target estimate, seconds
+float32 target_age
