@@ -24,6 +24,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SetStationKeepTarget.srv"
   "srv/SetStationKeepOffset.srv"
   "srv/SetAxisHold.srv"
+  "srv/SetMissionWaypoints.srv"
   "action/VisualServoing.action"
   "action/LidarServoing.action"
   "action/DockingApproach.action"

@@ -1,0 +1,6 @@
+
+geometry_msgs/Point[] waypoints
+bool relative
+---
+bool success
+string message
