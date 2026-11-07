@@ -1,4 +1,11 @@
-
+builtin_interfaces/Duration time_allowance
+float32 radius
+float32 depth_offset
+float32 station_angle
+bool follow_target_heading
+float32 max_arc_speed
+bool face_target
+float32 min_distance
 ---
 uint16 NONE=0
 uint16 UNKNOWN=720
