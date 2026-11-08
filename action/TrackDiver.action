@@ -6,6 +6,7 @@ bool follow_target_heading
 float32 max_arc_speed
 bool face_target
 float32 min_distance
+float32 heading_offset
 ---
 uint16 NONE=0
 uint16 UNKNOWN=720

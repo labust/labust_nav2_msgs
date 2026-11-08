@@ -1,7 +1,12 @@
+# heading_mode (TrackDiver): keep the current one, face the target, or match its heading.
+uint8 HEADING_KEEP=0
+uint8 HEADING_FACE_TARGET=1
+uint8 HEADING_TARGET=2
 float64 offset_x
 float64 offset_y
 float64 offset_z
 float64 offset_yaw
+uint8 heading_mode
 ---
 bool success
 string message
